@@ -28,34 +28,34 @@ insert into produto values
 
 select * from pedidos;
 insert into pedidos values
-(null, null, '2000-01-01', '500.00', '2023-01-10'),
-(null, null, '2020-02-01', '30.00', '2023-02-10'),
-(null, null, '2020-03-01', '80.00', '2023-03-10'),
-(null, null, '2020-04-01', '90.00', '2023-04-10'),
-(null, null, '2020-05-01', '112.00', '2023-05-10'),
-(null, null, '2020-06-01', '98.00', '2023-06-10'),
-(null, null, '2020-07-01', '145.00', '2023-07-10'),
-(null, null, '2020-08-01', '1000.00', '2023-08-10'),
-(null, null, '2020-09-01', '450.00', '2023-09-10'),
-(null, null, '2020-10-01', '320.00', '2023-10-10');
+(null, 1, '2000-01-01', '500.00', '2023-01-10'),
+(null, 2, '2020-02-01', '30.00', '2023-02-10'),
+(null, 3, '2020-03-01', '80.00', '2023-03-10'),
+(null, 4, '2020-04-01', '90.00', '2023-04-10'),
+(null, 5, '2020-05-01', '112.00', '2023-05-10'),
+(null, 6, '2020-06-01', '98.00', '2023-06-10'),
+(null, 7, '2020-07-01', '145.00', '2023-07-10'),
+(null, 8, '2020-08-01', '1000.00', '2023-08-10'),
+(null, 9, '2020-09-01', '450.00', '2023-09-10'),
+(null, 10, '2020-10-01', '320.00', '2023-10-10');
 
 select * from itemPedido;
 insert into itemPedido values
-(null, null, null, '2', '99.00', '1100.00'),
-(null, null, null, '12', '100.00', '250.00'),
-(null, null, null, '3', '110.00', '600.00'),
-(null, null, null, '4', '120.00', '650.00'),
-(null, null, null, '10', '130.00', '420.00'),
-(null, null, null, '11', '140.00', '250.00'),
-(null, null, null, '1', '150.00', '230.00'),
-(null, null, null, '2', '160.00', '2300.00'),
-(null, null, null, '3', '170.00', '260.00'),
-(null, null, null, '10', '180.00', '1500.00');
+(null, 1, 1, '2', '99.00', '1100.00'),
+(null, 2, 2, '12', '100.00', '250.00'),
+(null, 3, 3, '3', '110.00', '600.00'),
+(null, 4, 4, '4', '120.00', '650.00'),
+(null, 5, 5, '10', '130.00', '420.00'),
+(null, 6, 6, '11', '140.00', '250.00'),
+(null, 7, 7, '1', '150.00', '230.00'),
+(null, 8, 8, '2', '160.00', '2300.00'),
+(null, 9, 9, '3', '170.00', '260.00'),
+(null, 10, 10, '10', '180.00', '1500.00');
 
 update cliente set celular = '5511101010101' where id_cliente = 12;
 update produto set quantidade_estoque = 12 where id_produto = 3;
 update pedidos set valor_total = 1000.00 where numero_pedido = 7;
 update itemPedido set quantidade = 3 where id_item = 1;
 
-delete from cliente where id_cliente = 10;
+delete from produto where id_produto = 5;
 delete from produto where id_produto = 8;
